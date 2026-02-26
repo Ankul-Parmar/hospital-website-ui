@@ -5,7 +5,7 @@ A fully responsive hospital website built using pure HTML, CSS, and JavaScript.
 This project focuses on clean UI design, structured layout, and user-friendly healthcare presentation.
 
 ## 🚀 Live Demo
-(After enabling GitHub Pages, paste your live link here)
+👉 https://ankul-parmar.github.io/hospital-website-ui/
 
 ## 📌 Features
 
