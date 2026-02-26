@@ -36,6 +36,10 @@ section:nth-child(even) {
     background: #f5f5f5;
 }
 
+.header.shadow {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
 .heading {
     text-align: center;
     padding-bottom: 2rem;
@@ -206,6 +210,17 @@ section:nth-child(even) {
     color: var(--light-color);
 }
 
+/*Add Card Hover Lift Effect*/
+.box:hover {
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+}   
+
+.box {
+    transition: 0.3s ease;
+}
+/*Add Card Hover Lift Effect*/
+
 .services .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -295,6 +310,16 @@ section:nth-child(even) {
     border: var(--border);
 }
 
+.doctor .box-container .box:hover img {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.doctor .box-container .box img {
+    transition: 0.3s ease;
+}
+
+
 .doctor .box-container .box h3 {
     color: var(--black);
     font-size: 2.5rem;
@@ -367,6 +392,11 @@ section:nth-child(even) {
     color: var(--black);
     text-transform: none;
     padding: 1rem;
+}
+
+.book .row form .box:focus {
+    border: 2px solid var(--green);
+    box-shadow: var(--box-shadow);
 }
 
 .book .row form .btn {
@@ -541,6 +571,19 @@ section:nth-child(even) {
     color: var(--green);
 }
 
+/*scrolling animation*/
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /*Media Querys*/
 
 @media (max-width: 991px) {
@@ -615,5 +658,3 @@ section:nth-child(even) {
         font-size: 50%;
     }
 }
-
-
